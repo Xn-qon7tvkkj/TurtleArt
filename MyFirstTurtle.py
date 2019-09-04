@@ -132,5 +132,5 @@ for i in range(3):
         t.right(45)
         side = side - 10
 
-
+turtle.color("pink")
 turtle.exitonclick()
