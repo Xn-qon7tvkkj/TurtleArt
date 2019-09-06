@@ -1,6 +1,6 @@
 import turtle
 
-turtle.speed(30)
+turtle.speed('fastest')
 sidelength = 35
 point = 6
 side2 = 2
@@ -73,5 +73,6 @@ for size in range(30):
     turtle.forward(10)
     turtle.left(10)
     turtle.forward(3)
+
 
 turtle.exitonclick()
