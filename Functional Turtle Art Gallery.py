@@ -6,9 +6,8 @@ point = 6
 side2 = 2
 
 ral = turtle.Turtle()
-scn = turtle.Screen()
 ral.speed('fastest')
-scn.color("green")
+
 
 def octagon(side):
     for size in range(8):
