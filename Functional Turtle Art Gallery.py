@@ -1,78 +1,82 @@
 import turtle
 
-turtle.speed('fastest')
+
 sidelength = 35
 point = 6
 side2 = 2
 
+ral = turtle.Turtle()
+scn = turtle.Screen()
+ral.speed('fastest')
+scn.color("green")
 
 def octagon(side):
     for size in range(8):
-        turtle.left(70)
-        turtle.forward(side)
+        ral.left(70)
+        ral.forward(side)
 
 def pentagon(sidelength):
     for size in range(5):
-        turtle.right(45)
-        turtle.forward(sidelength)
+        ral.right(45)
+        ral.forward(sidelength)
 
 def circle(point):
     for size in range(30):
-        turtle.left(10)
-        turtle.right(point)
-        turtle.forward(5)
+        ral.left(10)
+        ral.right(point)
+        ral.forward(5)
 
 def square(side2):
     for size in range(4):
-        turtle.forward(50)
-        turtle.right(90)
+        ral.forward(50)
+        ral.right(90)
 
 for size in range(95):
-    turtle.penup()
-    turtle.goto(-200, 200)
-    turtle.pendown()
+    ral.penup()
+    ral.goto(-200, 200)
+    ral.pendown()
     octagon(size)
-    turtle.right(5)
-    turtle.color("gray")
-    turtle.forward(20)
-    turtle.backward(70)
+    ral.right(5)
+    ral.color("gray")
+    ral.forward(20)
+    ral.backward(70)
     circle(point)
-    turtle.right(80)
-    turtle.forward(5)
+    ral.right(80)
+    ral.forward(5)
 
 for size in range(70):
-    turtle.penup()
-    turtle.goto(200, 350)
-    turtle.pendown()
-    turtle.forward(80)
+    ral.penup()
+    ral.goto(200, 350)
+    ral.pendown()
+    ral.forward(80)
     pentagon(sidelength)
-    turtle.right(20)
-    turtle.forward(10)
+    ral.right(20)
+    ral.forward(10)
     square(side2)
-    turtle.left(10)
-    turtle.forward(3)
+    ral.left(10)
+    ral.forward(3)
 
 for size in range(70):
-    turtle.penup()
-    turtle.goto(0, -300)
-    turtle.pendown()
+    ral.penup()
+    ral.goto(0, -300)
+    ral.pendown()
     circle(point)
-    turtle.right(25)
-    turtle.backward(15)
-    turtle.forward(5)
-    turtle.left(10)
-    turtle.forward(3)
+    ral.right(25)
+    ral.backward(15)
+    ral.forward(5)
+    ral.left(10)
+    ral.forward(3)
 
 for size in range(30):
-    turtle.penup()
-    turtle.goto(100, 100)
-    turtle.pendown()
+    ral.penup()
+    ral.goto(100, 100)
+    ral.pendown()
     square(side2)
-    turtle.backward(20)
-    turtle.right(45)
-    turtle.forward(10)
-    turtle.left(10)
-    turtle.forward(3)
+    ral.backward(20)
+    ral.right(45)
+    ral.forward(10)
+    ral.left(10)
+    ral.forward(3)
 
 
-turtle.exitonclick()
+ral.exitonclick()
