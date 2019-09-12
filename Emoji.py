@@ -25,10 +25,12 @@ def circle4(side):
         que.forward(8)
         que.left(6)
 
+
 def circle5(side):
     for size in range(65):
         se.forward(1)
         se.left(6)
+
 
 def eye1(side):
     for size in range(65):
